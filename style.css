@@ -1,11 +1,20 @@
 *{
+   
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 h1 {
     text-align: center;
+    color: #F0F2F0;
 }
 
 main {
@@ -16,10 +25,12 @@ main {
 
 .image-container {
     display: flex;
+   
 }
 
 .image-container img {
     width: 80%;
+  
 }
 
 
@@ -27,3 +38,21 @@ article {
     padding: 10px;
     box-shadow: 0px 0px 1px #000;
 }
+
+#cargar-personajes {
+    background-color: #18881c; /* Color de fondo del botón (verde) */
+    color: white; /* Color del texto del botón (blanco) */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    border: none; /* Quitar el borde del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  #cargar-personajes:hover {
+    background-color: #045008; /* Cambiar el color de fondo del botón al pasar sobre él */
+    color: #000;
+    
+  }
+  

@@ -1,6 +1,4 @@
 *{
-   
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +9,7 @@ body{
     background: linear-gradient(to right, #FFE000, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     animation: animacion 5s ease infinite;
+    text-align: center;
 
 }
 
@@ -28,7 +27,7 @@ body{
 
 
 h1 {
-    text-align: center;
+
     color: #F0F2F0;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -67,6 +66,7 @@ button {
     margin-top: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
     
   }
   

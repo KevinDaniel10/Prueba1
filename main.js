@@ -25,3 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById("cargar-personajes");
+    button.addEventListener("click", function() {
+        obtenerPersonajes(data => {
+            const personajesAleatorios = data.results.sort(() => 0.5 - Math.random()).slice(0, 6);
+            const main = document.querySelector("main");
+            main.innerHTML = ""; // Limpia el contenido anterior
+            personajesAleatorios.forEach(personaje => {
+                const article = document.createRange().createContextualFragment(/*html*/`
+                    <article>
+                        <div class="image-container">
+                            <img src="${personaje.image}" alt="Personaje">
+                        </div>
+                        <h2>${personaje.name}</h2>
+                        <span>${personaje.status}</span>
+                    </article>
+                `);
+                main.append(article);
+            });
+        });
+    });
+});
